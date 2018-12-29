@@ -1,0 +1,1021 @@
+/* jol ------------------------------------------------------------------------------------------ */
+/* container */
+.jol,
+.jol-gap,
+.jol-gap-2x,
+.jol-gap-fixed,
+.jol-gap-fixed-2x {
+  overflow: auto;
+}
+/* default padding */
+.jol-gap,
+.jol-gap-fixed,
+.jol-gap .jol-1-1,
+.jol-gap-fixed .jol-1-1,
+.jol-gap .jol-1-2,
+.jol-gap-fixed .jol-1-2,
+.jol-gap .jol-2-2,
+.jol-gap-fixed .jol-2-2,
+.jol-gap .jol-1-3,
+.jol-gap-fixed .jol-1-3,
+.jol-gap .jol-2-3,
+.jol-gap-fixed .jol-2-3,
+.jol-gap .jol-3-3,
+.jol-gap-fixed .jol-3-3,
+.jol-gap .jol-1-4,
+.jol-gap-fixed .jol-1-4,
+.jol-gap .jol-2-4,
+.jol-gap-fixed .jol-2-4,
+.jol-gap .jol-3-4,
+.jol-gap-fixed .jol-3-4,
+.jol-gap .jol-4-4,
+.jol-gap-fixed .jol-4-4,
+.jol-gap .jol-1-5,
+.jol-gap-fixed .jol-1-5,
+.jol-gap .jol-2-5,
+.jol-gap-fixed .jol-2-5,
+.jol-gap .jol-3-5,
+.jol-gap-fixed .jol-3-5,
+.jol-gap .jol-4-5,
+.jol-gap-fixed .jol-4-5,
+.jol-gap .jol-5-5,
+.jol-gap-fixed .jol-5-5,
+.jol-gap .jol-1-6,
+.jol-gap-fixed .jol-1-6,
+.jol-gap .jol-2-6,
+.jol-gap-fixed .jol-2-6,
+.jol-gap .jol-3-6,
+.jol-gap-fixed .jol-3-6,
+.jol-gap .jol-4-6,
+.jol-gap-fixed .jol-4-6,
+.jol-gap .jol-5-6,
+.jol-gap-fixed .jol-5-6,
+.jol-gap .jol-6-6,
+.jol-gap-fixed .jol-6-6,
+.jol-gap .jol-1,
+.jol-gap-fixed .jol-1,
+.jol-gap .jol-2,
+.jol-gap-fixed .jol-2,
+.jol-gap .jol-3,
+.jol-gap-fixed .jol-3,
+.jol-gap .jol-4,
+.jol-gap-fixed .jol-4,
+.jol-gap .jol-5,
+.jol-gap-fixed .jol-5,
+.jol-gap .jol-6,
+.jol-gap-fixed .jol-6,
+.jol-gap .jol-7,
+.jol-gap-fixed .jol-7,
+.jol-gap .jol-8,
+.jol-gap-fixed .jol-8,
+.jol-gap .jol-9,
+.jol-gap-fixed .jol-9,
+.jol-gap .jol-10,
+.jol-gap-fixed .jol-10,
+.jol-gap .jol-11,
+.jol-gap-fixed .jol-11,
+.jol-gap .jol-12,
+.jol-gap-fixed .jol-12 {
+  padding: 5px;
+}
+.jol-gap-2x,
+.jol-gap-fixed-2x,
+.jol-gap-2x .jol-1-1,
+.jol-gap-fixed-2x .jol-1-1,
+.jol-gap-2x .jol-1-2,
+.jol-gap-fixed-2x .jol-1-2,
+.jol-gap-2x .jol-2-2,
+.jol-gap-fixed-2x .jol-2-2,
+.jol-gap-2x .jol-1-3,
+.jol-gap-fixed-2x .jol-1-3,
+.jol-gap-2x .jol-2-3,
+.jol-gap-fixed-2x .jol-2-3,
+.jol-gap-2x .jol-3-3,
+.jol-gap-fixed-2x .jol-3-3,
+.jol-gap-2x .jol-1-4,
+.jol-gap-fixed-2x .jol-1-4,
+.jol-gap-2x .jol-2-4,
+.jol-gap-fixed-2x .jol-2-4,
+.jol-gap-2x .jol-3-4,
+.jol-gap-fixed-2x .jol-3-4,
+.jol-gap-2x .jol-4-4,
+.jol-gap-fixed-2x .jol-4-4,
+.jol-gap-2x .jol-1-5,
+.jol-gap-fixed-2x .jol-1-5,
+.jol-gap-2x .jol-2-5,
+.jol-gap-fixed-2x .jol-2-5,
+.jol-gap-2x .jol-3-5,
+.jol-gap-fixed-2x .jol-3-5,
+.jol-gap-2x .jol-4-5,
+.jol-gap-fixed-2x .jol-4-5,
+.jol-gap-2x .jol-5-5,
+.jol-gap-fixed-2x .jol-5-5,
+.jol-gap-2x .jol-1-6,
+.jol-gap-fixed-2x .jol-1-6,
+.jol-gap-2x .jol-2-6,
+.jol-gap-fixed-2x .jol-2-6,
+.jol-gap-2x .jol-3-6,
+.jol-gap-fixed-2x .jol-3-6,
+.jol-gap-2x .jol-4-6,
+.jol-gap-fixed-2x .jol-4-6,
+.jol-gap-2x .jol-5-6,
+.jol-gap-fixed-2x .jol-5-6,
+.jol-gap-2x .jol-6-6,
+.jol-gap-fixed-2x .jol-6-6,
+.jol-gap-2x .jol-1,
+.jol-gap-fixed-2x .jol-1,
+.jol-gap-2x .jol-2,
+.jol-gap-fixed-2x .jol-2,
+.jol-gap-2x .jol-3,
+.jol-gap-fixed-2x .jol-3,
+.jol-gap-2x .jol-4,
+.jol-gap-fixed-2x .jol-4,
+.jol-gap-2x .jol-5,
+.jol-gap-fixed-2x .jol-5,
+.jol-gap-2x .jol-6,
+.jol-gap-fixed-2x .jol-6,
+.jol-gap-2x .jol-7,
+.jol-gap-fixed-2x .jol-7,
+.jol-gap-2x .jol-8,
+.jol-gap-fixed-2x .jol-8,
+.jol-gap-2x .jol-9,
+.jol-gap-fixed-2x .jol-9,
+.jol-gap-2x .jol-10,
+.jol-gap-fixed-2x .jol-10,
+.jol-gap-2x .jol-11,
+.jol-gap-fixed-2x .jol-11,
+.jol-gap-2x .jol-12,
+.jol-gap-fixed-2x .jol-12 {
+  padding: 10px;
+}
+/* responsive padding */
+@media (max-width: 1800px) {
+  .jol-gap,
+  .jol-gap .jol-1-1,
+  .jol-gap .jol-1-2,
+  .jol-gap .jol-2-2,
+  .jol-gap .jol-1-3,
+  .jol-gap .jol-2-3,
+  .jol-gap .jol-3-3,
+  .jol-gap .jol-1-4,
+  .jol-gap .jol-2-4,
+  .jol-gap .jol-3-4,
+  .jol-gap .jol-4-4,
+  .jol-gap .jol-1-5,
+  .jol-gap .jol-2-5,
+  .jol-gap .jol-3-5,
+  .jol-gap .jol-4-5,
+  .jol-gap .jol-5-5,
+  .jol-gap .jol-1-6,
+  .jol-gap .jol-2-6,
+  .jol-gap .jol-3-6,
+  .jol-gap .jol-4-6,
+  .jol-gap .jol-5-6,
+  .jol-gap .jol-6-6,
+  .jol-gap .jol-1,
+  .jol-gap .jol-2,
+  .jol-gap .jol-3,
+  .jol-gap .jol-4,
+  .jol-gap .jol-5,
+  .jol-gap .jol-6,
+  .jol-gap .jol-7,
+  .jol-gap .jol-8,
+  .jol-gap .jol-9,
+  .jol-gap .jol-10,
+  .jol-gap .jol-11,
+  .jol-gap .jol-12 {
+    padding: 4px;
+  }
+  .jol-gap-2x,
+  .jol-gap-2x .jol-1-1,
+  .jol-gap-2x .jol-1-2,
+  .jol-gap-2x .jol-2-2,
+  .jol-gap-2x .jol-1-3,
+  .jol-gap-2x .jol-2-3,
+  .jol-gap-2x .jol-3-3,
+  .jol-gap-2x .jol-1-4,
+  .jol-gap-2x .jol-2-4,
+  .jol-gap-2x .jol-3-4,
+  .jol-gap-2x .jol-4-4,
+  .jol-gap-2x .jol-1-5,
+  .jol-gap-2x .jol-2-5,
+  .jol-gap-2x .jol-3-5,
+  .jol-gap-2x .jol-4-5,
+  .jol-gap-2x .jol-5-5,
+  .jol-gap-2x .jol-1-6,
+  .jol-gap-2x .jol-2-6,
+  .jol-gap-2x .jol-3-6,
+  .jol-gap-2x .jol-4-6,
+  .jol-gap-2x .jol-5-6,
+  .jol-gap-2x .jol-6-6,
+  .jol-gap-2x .jol-1,
+  .jol-gap-2x .jol-2,
+  .jol-gap-2x .jol-3,
+  .jol-gap-2x .jol-4,
+  .jol-gap-2x .jol-5,
+  .jol-gap-2x .jol-6,
+  .jol-gap-2x .jol-7,
+  .jol-gap-2x .jol-8,
+  .jol-gap-2x .jol-9,
+  .jol-gap-2x .jol-10,
+  .jol-gap-2x .jol-11,
+  .jol-gap-2x .jol-12 {
+    padding: 8px;
+  }
+}
+@media (max-width: 1200px) {
+  .jol-gap,
+  .jol-gap .jol-1-1,
+  .jol-gap .jol-1-2,
+  .jol-gap .jol-2-2,
+  .jol-gap .jol-1-3,
+  .jol-gap .jol-2-3,
+  .jol-gap .jol-3-3,
+  .jol-gap .jol-1-4,
+  .jol-gap .jol-2-4,
+  .jol-gap .jol-3-4,
+  .jol-gap .jol-4-4,
+  .jol-gap .jol-1-5,
+  .jol-gap .jol-2-5,
+  .jol-gap .jol-3-5,
+  .jol-gap .jol-4-5,
+  .jol-gap .jol-5-5,
+  .jol-gap .jol-1-6,
+  .jol-gap .jol-2-6,
+  .jol-gap .jol-3-6,
+  .jol-gap .jol-4-6,
+  .jol-gap .jol-5-6,
+  .jol-gap .jol-6-6,
+  .jol-gap .jol-1,
+  .jol-gap .jol-2,
+  .jol-gap .jol-3,
+  .jol-gap .jol-4,
+  .jol-gap .jol-5,
+  .jol-gap .jol-6,
+  .jol-gap .jol-7,
+  .jol-gap .jol-8,
+  .jol-gap .jol-9,
+  .jol-gap .jol-10,
+  .jol-gap .jol-11,
+  .jol-gap .jol-12 {
+    padding: 3px;
+  }
+  .jol-gap-2x,
+  .jol-gap-2x .jol-1-1,
+  .jol-gap-2x .jol-1-2,
+  .jol-gap-2x .jol-2-2,
+  .jol-gap-2x .jol-1-3,
+  .jol-gap-2x .jol-2-3,
+  .jol-gap-2x .jol-3-3,
+  .jol-gap-2x .jol-1-4,
+  .jol-gap-2x .jol-2-4,
+  .jol-gap-2x .jol-3-4,
+  .jol-gap-2x .jol-4-4,
+  .jol-gap-2x .jol-1-5,
+  .jol-gap-2x .jol-2-5,
+  .jol-gap-2x .jol-3-5,
+  .jol-gap-2x .jol-4-5,
+  .jol-gap-2x .jol-5-5,
+  .jol-gap-2x .jol-1-6,
+  .jol-gap-2x .jol-2-6,
+  .jol-gap-2x .jol-3-6,
+  .jol-gap-2x .jol-4-6,
+  .jol-gap-2x .jol-5-6,
+  .jol-gap-2x .jol-6-6,
+  .jol-gap-2x .jol-1,
+  .jol-gap-2x .jol-2,
+  .jol-gap-2x .jol-3,
+  .jol-gap-2x .jol-4,
+  .jol-gap-2x .jol-5,
+  .jol-gap-2x .jol-6,
+  .jol-gap-2x .jol-7,
+  .jol-gap-2x .jol-8,
+  .jol-gap-2x .jol-9,
+  .jol-gap-2x .jol-10,
+  .jol-gap-2x .jol-11,
+  .jol-gap-2x .jol-12 {
+    padding: 6px;
+  }
+}
+@media (max-width: 600px) {
+  .jol-gap,
+  .jol-gap .jol-1-1,
+  .jol-gap .jol-1-2,
+  .jol-gap .jol-2-2,
+  .jol-gap .jol-1-3,
+  .jol-gap .jol-2-3,
+  .jol-gap .jol-3-3,
+  .jol-gap .jol-1-4,
+  .jol-gap .jol-2-4,
+  .jol-gap .jol-3-4,
+  .jol-gap .jol-4-4,
+  .jol-gap .jol-1-5,
+  .jol-gap .jol-2-5,
+  .jol-gap .jol-3-5,
+  .jol-gap .jol-4-5,
+  .jol-gap .jol-5-5,
+  .jol-gap .jol-1-6,
+  .jol-gap .jol-2-6,
+  .jol-gap .jol-3-6,
+  .jol-gap .jol-4-6,
+  .jol-gap .jol-5-6,
+  .jol-gap .jol-6-6,
+  .jol-gap .jol-1,
+  .jol-gap .jol-2,
+  .jol-gap .jol-3,
+  .jol-gap .jol-4,
+  .jol-gap .jol-5,
+  .jol-gap .jol-6,
+  .jol-gap .jol-7,
+  .jol-gap .jol-8,
+  .jol-gap .jol-9,
+  .jol-gap .jol-10,
+  .jol-gap .jol-11,
+  .jol-gap .jol-12 {
+    padding: 2px;
+  }
+  .jol-gap-2x,
+  .jol-gap-2x .jol-1-1,
+  .jol-gap-2x .jol-1-2,
+  .jol-gap-2x .jol-2-2,
+  .jol-gap-2x .jol-1-3,
+  .jol-gap-2x .jol-2-3,
+  .jol-gap-2x .jol-3-3,
+  .jol-gap-2x .jol-1-4,
+  .jol-gap-2x .jol-2-4,
+  .jol-gap-2x .jol-3-4,
+  .jol-gap-2x .jol-4-4,
+  .jol-gap-2x .jol-1-5,
+  .jol-gap-2x .jol-2-5,
+  .jol-gap-2x .jol-3-5,
+  .jol-gap-2x .jol-4-5,
+  .jol-gap-2x .jol-5-5,
+  .jol-gap-2x .jol-1-6,
+  .jol-gap-2x .jol-2-6,
+  .jol-gap-2x .jol-3-6,
+  .jol-gap-2x .jol-4-6,
+  .jol-gap-2x .jol-5-6,
+  .jol-gap-2x .jol-6-6,
+  .jol-gap-2x .jol-1,
+  .jol-gap-2x .jol-2,
+  .jol-gap-2x .jol-3,
+  .jol-gap-2x .jol-4,
+  .jol-gap-2x .jol-5,
+  .jol-gap-2x .jol-6,
+  .jol-gap-2x .jol-7,
+  .jol-gap-2x .jol-8,
+  .jol-gap-2x .jol-9,
+  .jol-gap-2x .jol-10,
+  .jol-gap-2x .jol-11,
+  .jol-gap-2x .jol-12 {
+    padding: 4px;
+  }
+}
+@media (max-width: 300px) {
+  .jol-gap,
+  .jol-gap .jol-1-1,
+  .jol-gap .jol-1-2,
+  .jol-gap .jol-2-2,
+  .jol-gap .jol-1-3,
+  .jol-gap .jol-2-3,
+  .jol-gap .jol-3-3,
+  .jol-gap .jol-1-4,
+  .jol-gap .jol-2-4,
+  .jol-gap .jol-3-4,
+  .jol-gap .jol-4-4,
+  .jol-gap .jol-1-5,
+  .jol-gap .jol-2-5,
+  .jol-gap .jol-3-5,
+  .jol-gap .jol-4-5,
+  .jol-gap .jol-5-5,
+  .jol-gap .jol-1-6,
+  .jol-gap .jol-2-6,
+  .jol-gap .jol-3-6,
+  .jol-gap .jol-4-6,
+  .jol-gap .jol-5-6,
+  .jol-gap .jol-6-6,
+  .jol-gap .jol-1,
+  .jol-gap .jol-2,
+  .jol-gap .jol-3,
+  .jol-gap .jol-4,
+  .jol-gap .jol-5,
+  .jol-gap .jol-6,
+  .jol-gap .jol-7,
+  .jol-gap .jol-8,
+  .jol-gap .jol-9,
+  .jol-gap .jol-10,
+  .jol-gap .jol-11,
+  .jol-gap .jol-12 {
+    padding: 1.5px;
+  }
+  .jol-gap-2x,
+  .jol-gap-2x .jol-1-1,
+  .jol-gap-2x .jol-1-2,
+  .jol-gap-2x .jol-2-2,
+  .jol-gap-2x .jol-1-3,
+  .jol-gap-2x .jol-2-3,
+  .jol-gap-2x .jol-3-3,
+  .jol-gap-2x .jol-1-4,
+  .jol-gap-2x .jol-2-4,
+  .jol-gap-2x .jol-3-4,
+  .jol-gap-2x .jol-4-4,
+  .jol-gap-2x .jol-1-5,
+  .jol-gap-2x .jol-2-5,
+  .jol-gap-2x .jol-3-5,
+  .jol-gap-2x .jol-4-5,
+  .jol-gap-2x .jol-5-5,
+  .jol-gap-2x .jol-1-6,
+  .jol-gap-2x .jol-2-6,
+  .jol-gap-2x .jol-3-6,
+  .jol-gap-2x .jol-4-6,
+  .jol-gap-2x .jol-5-6,
+  .jol-gap-2x .jol-6-6,
+  .jol-gap-2x .jol-1,
+  .jol-gap-2x .jol-2,
+  .jol-gap-2x .jol-3,
+  .jol-gap-2x .jol-4,
+  .jol-gap-2x .jol-5,
+  .jol-gap-2x .jol-6,
+  .jol-gap-2x .jol-7,
+  .jol-gap-2x .jol-8,
+  .jol-gap-2x .jol-9,
+  .jol-gap-2x .jol-10,
+  .jol-gap-2x .jol-11,
+  .jol-gap-2x .jol-12 {
+    padding: 3px;
+  }
+}
+/* float left */
+.jol-1-1,
+.jol-1-2,
+.jol-2-2,
+.jol-1-3,
+.jol-2-3,
+.jol-3-3,
+.jol-1-4,
+.jol-2-4,
+.jol-3-4,
+.jol-4-4,
+.jol-1-5,
+.jol-2-5,
+.jol-3-5,
+.jol-4-5,
+.jol-5-5,
+.jol-1-6,
+.jol-2-6,
+.jol-3-6,
+.jol-4-6,
+.jol-5-6,
+.jol-6-6,
+.jol-1,
+.jol-2,
+.jol-3,
+.jol-4,
+.jol-5,
+.jol-6,
+.jol-7,
+.jol-8,
+.jol-9,
+.jol-10,
+.jol-11,
+.jol-12 {
+  float: left;
+  box-sizing: border-box;
+}
+/* default width */
+.jol-1-1 {
+  width: 100%;
+}
+.jol-1-2 {
+  width: 50%;
+}
+.jol-2-2 {
+  width: 100%;
+}
+.jol-1-3 {
+  width: 33.33333333333333%;
+}
+.jol-2-3 {
+  width: 66.66666666666666%;
+}
+.jol-3-3 {
+  width: 100%;
+}
+.jol-1-4 {
+  width: 25%;
+}
+.jol-2-4 {
+  width: 50%;
+}
+.jol-3-4 {
+  width: 75%;
+}
+.jol-4-4 {
+  width: 100%;
+}
+.jol-1-5 {
+  width: 20%;
+}
+.jol-2-5 {
+  width: 40%;
+}
+.jol-3-5 {
+  width: 60%;
+}
+.jol-4-5 {
+  width: 80%;
+}
+.jol-5-5 {
+  width: 100%;
+}
+.jol-1-6 {
+  width: 16.666666666666664%;
+}
+.jol-2-6 {
+  width: 33.33333333333333%;
+}
+.jol-3-6 {
+  width: 50%;
+}
+.jol-4-6 {
+  width: 66.66666666666666%;
+}
+.jol-5-6 {
+  width: 83.33333333333334%;
+}
+.jol-6-6 {
+  width: 100%;
+}
+.jol-1 {
+  width: 8.333333333333332%;
+}
+.jol-2 {
+  width: 16.666666666666664%;
+}
+.jol-3 {
+  width: 25%;
+}
+.jol-4 {
+  width: 33.33333333333333%;
+}
+.jol-5 {
+  width: 41.66666666666667%;
+}
+.jol-6 {
+  width: 50%;
+}
+.jol-7 {
+  width: 58.333333333333336%;
+}
+.jol-8 {
+  width: 66.66666666666666%;
+}
+.jol-9 {
+  width: 75%;
+}
+.jol-10 {
+  width: 83.33333333333334%;
+}
+.jol-11 {
+  width: 91.66666666666666%;
+}
+.jol-12 {
+  width: 100%;
+}
+/* width with gap */
+/* default visibility */
+.jol-laptop-show,
+.jol-tablet-show,
+.jol-phone-show,
+.jol-watch-show {
+  display: none;
+}
+/* responsive width */
+@media (max-width: 1800px) {
+  .jol-laptop-show {
+    display: block;
+  }
+  .jol-laptop-hide {
+    display: none;
+  }
+  .jol-laptop-1-1 {
+    width: 100%;
+  }
+  .jol-laptop-1-2 {
+    width: 50%;
+  }
+  .jol-laptop-2-2 {
+    width: 100%;
+  }
+  .jol-laptop-1-3 {
+    width: 33.33333333333333%;
+  }
+  .jol-laptop-2-3 {
+    width: 66.66666666666666%;
+  }
+  .jol-laptop-3-3 {
+    width: 100%;
+  }
+  .jol-laptop-1-4 {
+    width: 25%;
+  }
+  .jol-laptop-2-4 {
+    width: 50%;
+  }
+  .jol-laptop-3-4 {
+    width: 75%;
+  }
+  .jol-laptop-4-4 {
+    width: 100%;
+  }
+  .jol-laptop-1-5 {
+    width: 20%;
+  }
+  .jol-laptop-2-5 {
+    width: 40%;
+  }
+  .jol-laptop-3-5 {
+    width: 60%;
+  }
+  .jol-laptop-4-5 {
+    width: 80%;
+  }
+  .jol-laptop-5-5 {
+    width: 100%;
+  }
+  .jol-laptop-1-6 {
+    width: 16.666666666666664%;
+  }
+  .jol-laptop-2-6 {
+    width: 33.33333333333333%;
+  }
+  .jol-laptop-3-6 {
+    width: 50%;
+  }
+  .jol-laptop-4-6 {
+    width: 66.66666666666666%;
+  }
+  .jol-laptop-5-6 {
+    width: 83.33333333333334%;
+  }
+  .jol-laptop-6-6 {
+    width: 100%;
+  }
+  .jol-laptop-1 {
+    width: 8.333333333333332%;
+  }
+  .jol-laptop-2 {
+    width: 16.666666666666664%;
+  }
+  .jol-laptop-3 {
+    width: 25%;
+  }
+  .jol-laptop-4 {
+    width: 33.33333333333333%;
+  }
+  .jol-laptop-5 {
+    width: 41.66666666666667%;
+  }
+  .jol-laptop-6 {
+    width: 50%;
+  }
+  .jol-laptop-7 {
+    width: 58.333333333333336%;
+  }
+  .jol-laptop-8 {
+    width: 66.66666666666666%;
+  }
+  .jol-laptop-9 {
+    width: 75%;
+  }
+  .jol-laptop-10 {
+    width: 83.33333333333334%;
+  }
+  .jol-laptop-11 {
+    width: 91.66666666666666%;
+  }
+  .jol-laptop-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .jol-tablet-show {
+    display: block;
+  }
+  .jol-tablet-hide {
+    display: none;
+  }
+  .jol-tablet-1-1 {
+    width: 100%;
+  }
+  .jol-tablet-1-2 {
+    width: 50%;
+  }
+  .jol-tablet-2-2 {
+    width: 100%;
+  }
+  .jol-tablet-1-3 {
+    width: 33.33333333333333%;
+  }
+  .jol-tablet-2-3 {
+    width: 66.66666666666666%;
+  }
+  .jol-tablet-3-3 {
+    width: 100%;
+  }
+  .jol-tablet-1-4 {
+    width: 25%;
+  }
+  .jol-tablet-2-4 {
+    width: 50%;
+  }
+  .jol-tablet-3-4 {
+    width: 75%;
+  }
+  .jol-tablet-4-4 {
+    width: 100%;
+  }
+  .jol-tablet-1-5 {
+    width: 20%;
+  }
+  .jol-tablet-2-5 {
+    width: 40%;
+  }
+  .jol-tablet-3-5 {
+    width: 60%;
+  }
+  .jol-tablet-4-5 {
+    width: 80%;
+  }
+  .jol-tablet-5-5 {
+    width: 100%;
+  }
+  .jol-tablet-1-6 {
+    width: 16.666666666666664%;
+  }
+  .jol-tablet-2-6 {
+    width: 33.33333333333333%;
+  }
+  .jol-tablet-3-6 {
+    width: 50%;
+  }
+  .jol-tablet-4-6 {
+    width: 66.66666666666666%;
+  }
+  .jol-tablet-5-6 {
+    width: 83.33333333333334%;
+  }
+  .jol-tablet-6-6 {
+    width: 100%;
+  }
+  .jol-tablet-1 {
+    width: 8.333333333333332%;
+  }
+  .jol-tablet-2 {
+    width: 16.666666666666664%;
+  }
+  .jol-tablet-3 {
+    width: 25%;
+  }
+  .jol-tablet-4 {
+    width: 33.33333333333333%;
+  }
+  .jol-tablet-5 {
+    width: 41.66666666666667%;
+  }
+  .jol-tablet-6 {
+    width: 50%;
+  }
+  .jol-tablet-7 {
+    width: 58.333333333333336%;
+  }
+  .jol-tablet-8 {
+    width: 66.66666666666666%;
+  }
+  .jol-tablet-9 {
+    width: 75%;
+  }
+  .jol-tablet-10 {
+    width: 83.33333333333334%;
+  }
+  .jol-tablet-11 {
+    width: 91.66666666666666%;
+  }
+  .jol-tablet-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .jol-phone-show {
+    display: block;
+  }
+  .jol-phone-hide {
+    display: none;
+  }
+  .jol-phone-1-1 {
+    width: 100%;
+  }
+  .jol-phone-1-2 {
+    width: 50%;
+  }
+  .jol-phone-2-2 {
+    width: 100%;
+  }
+  .jol-phone-1-3 {
+    width: 33.33333333333333%;
+  }
+  .jol-phone-2-3 {
+    width: 66.66666666666666%;
+  }
+  .jol-phone-3-3 {
+    width: 100%;
+  }
+  .jol-phone-1-4 {
+    width: 25%;
+  }
+  .jol-phone-2-4 {
+    width: 50%;
+  }
+  .jol-phone-3-4 {
+    width: 75%;
+  }
+  .jol-phone-4-4 {
+    width: 100%;
+  }
+  .jol-phone-1-5 {
+    width: 20%;
+  }
+  .jol-phone-2-5 {
+    width: 40%;
+  }
+  .jol-phone-3-5 {
+    width: 60%;
+  }
+  .jol-phone-4-5 {
+    width: 80%;
+  }
+  .jol-phone-5-5 {
+    width: 100%;
+  }
+  .jol-phone-1-6 {
+    width: 16.666666666666664%;
+  }
+  .jol-phone-2-6 {
+    width: 33.33333333333333%;
+  }
+  .jol-phone-3-6 {
+    width: 50%;
+  }
+  .jol-phone-4-6 {
+    width: 66.66666666666666%;
+  }
+  .jol-phone-5-6 {
+    width: 83.33333333333334%;
+  }
+  .jol-phone-6-6 {
+    width: 100%;
+  }
+  .jol-phone-1 {
+    width: 8.333333333333332%;
+  }
+  .jol-phone-2 {
+    width: 16.666666666666664%;
+  }
+  .jol-phone-3 {
+    width: 25%;
+  }
+  .jol-phone-4 {
+    width: 33.33333333333333%;
+  }
+  .jol-phone-5 {
+    width: 41.66666666666667%;
+  }
+  .jol-phone-6 {
+    width: 50%;
+  }
+  .jol-phone-7 {
+    width: 58.333333333333336%;
+  }
+  .jol-phone-8 {
+    width: 66.66666666666666%;
+  }
+  .jol-phone-9 {
+    width: 75%;
+  }
+  .jol-phone-10 {
+    width: 83.33333333333334%;
+  }
+  .jol-phone-11 {
+    width: 91.66666666666666%;
+  }
+  .jol-phone-12 {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .jol-watch-show {
+    display: block;
+  }
+  .jol-watch-hide {
+    display: none;
+  }
+  .jol-watch-1-1 {
+    width: 100%;
+  }
+  .jol-watch-1-2 {
+    width: 50%;
+  }
+  .jol-watch-2-2 {
+    width: 100%;
+  }
+  .jol-watch-1-3 {
+    width: 33.33333333333333%;
+  }
+  .jol-watch-2-3 {
+    width: 66.66666666666666%;
+  }
+  .jol-watch-3-3 {
+    width: 100%;
+  }
+  .jol-watch-1-4 {
+    width: 25%;
+  }
+  .jol-watch-2-4 {
+    width: 50%;
+  }
+  .jol-watch-3-4 {
+    width: 75%;
+  }
+  .jol-watch-4-4 {
+    width: 100%;
+  }
+  .jol-watch-1-5 {
+    width: 20%;
+  }
+  .jol-watch-2-5 {
+    width: 40%;
+  }
+  .jol-watch-3-5 {
+    width: 60%;
+  }
+  .jol-watch-4-5 {
+    width: 80%;
+  }
+  .jol-watch-5-5 {
+    width: 100%;
+  }
+  .jol-watch-1-6 {
+    width: 16.666666666666664%;
+  }
+  .jol-watch-2-6 {
+    width: 33.33333333333333%;
+  }
+  .jol-watch-3-6 {
+    width: 50%;
+  }
+  .jol-watch-4-6 {
+    width: 66.66666666666666%;
+  }
+  .jol-watch-5-6 {
+    width: 83.33333333333334%;
+  }
+  .jol-watch-6-6 {
+    width: 100%;
+  }
+  .jol-watch-1 {
+    width: 8.333333333333332%;
+  }
+  .jol-watch-2 {
+    width: 16.666666666666664%;
+  }
+  .jol-watch-3 {
+    width: 25%;
+  }
+  .jol-watch-4 {
+    width: 33.33333333333333%;
+  }
+  .jol-watch-5 {
+    width: 41.66666666666667%;
+  }
+  .jol-watch-6 {
+    width: 50%;
+  }
+  .jol-watch-7 {
+    width: 58.333333333333336%;
+  }
+  .jol-watch-8 {
+    width: 66.66666666666666%;
+  }
+  .jol-watch-9 {
+    width: 75%;
+  }
+  .jol-watch-10 {
+    width: 83.33333333333334%;
+  }
+  .jol-watch-11 {
+    width: 91.66666666666666%;
+  }
+  .jol-watch-12 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jol demo</title>
+	<link rel="stylesheet" type="text/css" href="jol.css">
+  <style type="text/css">
+
+		.container {
+			border: solid 1px #8888ff;
+    }
+
+		.item {
+			border: solid 1px #ff8888;
+    }
+
+	</style>
+</head>
+<body>
+
+  <h1 style="padding: 0 10px;">jol demo 1: main</h1>
+	<p>Current screen size is:</p>
+  <div class="container">
+    <div class="jol-laptop-hide">Desktop</div>
+    <div class="jol-laptop-show jol-tablet-hide">Laptop</div>
+    <div class="jol-tablet-show jol-phone-hide">Tablet</div>
+    <div class="jol-phone-show jol-watch-hide">Phone</div>
+    <div class="jol-watch-show">Watch</div>
+  </div>
+
+	<p>Responsive width and gap:</p>
+	<div class="jol-gap-2x container">
+		<div class="jol-6 jol-phone-12">
+			<div class="item">A</div>
+		</div>
+		<div class="jol-6 jol-phone-12">
+			<div class="item">B</div>
+		</div>
+		<div class="jol-6 jol-phone-12">
+			<div class="item">C</div>
+		</div>
+		<div class="jol-6 jol-phone-12">
+			<div class="item">D</div>
+		</div>
+	</div>
+
+	<p>Hide description on phone:</p>
+	<div class="jol-gap-fixed-2x container">
+		<div class="jol-6 jol-phone-12">
+			<div class="item">A</div>
+		</div>
+		<div class="jol-6 jol-phone-hide">
+			<div class="item">Description of A</div>
+		</div>
+		<div class="jol-6 jol-phone-12">
+			<div class="item">B</div>
+		</div>
+		<div class="jol-6 jol-phone-hide">
+			<div class="item">Description of B</div>
+		</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>unstyle demo navbar</title>
+	<link rel="stylesheet" type="text/css" href="jol.css">
+  <style type="text/css">
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    nav {
+      padding: 10px;
+      border-bottom: solid 1px silver;
+      background-color: #eee;
+    }
+
+    side {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 200px;
+      transform: translateX(-100%);
+      padding: 10px;
+      border-right: solid 1px silver;
+      background-color: #f8f8f8;
+      transition: transform 0.2s;
+      z-index: 1;
+    }
+    side.open {
+      transform: translateX(0);
+    }
+
+    .side-mask {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: black;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+    side.open + .side-mask {
+      opacity: 0.5;
+      pointer-events: auto;
+    }
+
+	</style>
+</head>
+<body>
+
+	<nav class="jol-phone-hide">
+		<span>Logo</span>
+		<span style="float: right;">
+			<a href="">Blog</a>
+			<span> | </span>
+			<a href="">Projects</a>
+			<span> | </span>
+			<a href="">About</a>
+		</span>
+	</nav>
+	<nav class="jol-phone-show">
+		<button onclick="document.querySelector('side').classList.add('open')">≡</button>
+		<span>Logo</span>
+	</nav>
+	<side>
+		<div><a href="">Blog</a></div>
+		<div><a href="">Projects</a></div>
+		<div><a href="">About</a></div>
+	</side>
+  <div class="side-mask" onclick="document.querySelector('side').classList.remove('open')"></div>
+  <h1 style="padding: 0 10px;">jol demo 2: navbar</h1>
+  <div style="padding: 0 10px;">
+    When the screen width is less than 600px, the menu above will be folded to an expandable side panel.
+  </div>
+  <h2 style="padding: 0 10px;" class="jol-phone-show">Yes, this is it!</h2>
+</body>
+</html>

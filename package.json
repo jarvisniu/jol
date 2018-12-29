@@ -1,0 +1,24 @@
+{
+  "name": "jol",
+  "version": "0.1.0",
+  "description": "A simple responsive css library",
+  "main": "jol.css",
+  "scripts": {
+    "build": "stylus jol.styl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarvisniu/jol.git"
+  },
+  "keywords": [
+    "responsive",
+    "css",
+    "library"
+  ],
+  "author": "Jarvis Niu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarvisniu/jol/issues"
+  },
+  "homepage": "https://github.com/jarvisniu/jol#readme"
+}
