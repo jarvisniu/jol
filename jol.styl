@@ -7,16 +7,16 @@ NS = 1 2 3 4 5 6 12
 DIVICE_WIDTHS = {
   laptop: 1800px,
   tablet: 1200px,
-  phone: 	600px,
-  watch: 	300px,
+  phone: 600px,
+  watch: 300px,
 }
 
 DEVICE_HALF_PADDINGS = {
   default: 5px,
   laptop: 4px,
   tablet: 3px,
-  phone: 	2px,
-  watch: 	1.5px,
+  phone: 2px,
+  watch: 1.5px,
 }
 
 // functions ---------------------------------------------------------------------------------------
@@ -43,9 +43,6 @@ selector_device(device, m, n)
 padding(p)
   +cache('padding' + p)
     padding: p
-// margin(p)
-// 	+cache('margin' + p)
-// 		margin: p
 .jol-gap,
 .jol-gap-fixed
   padding(DEVICE_HALF_PADDINGS[default])
@@ -95,11 +92,11 @@ for n in NS
 
 /* width with gap */
 // for device, width in DIVICE_WIDTHS
-// 	@media (max-width: width)
-// 		for n in NS
-// 			for m in (1..n)
-// 				{selector(m, n)}
-// 					width: 'calc(%s - %s)' % (percentage(m / n) DEVICE_HALF_PADDINGS[device] * 4)
+//   @media (max-width: width)
+//     for n in NS
+//       for m in (1..n)
+//         {selector(m, n)}
+//           width: 'calc(%s - %s)' % (percentage(m / n) DEVICE_HALF_PADDINGS[device] * 4)
 
 /* default visibility */
 for device in DIVICE_WIDTHS
