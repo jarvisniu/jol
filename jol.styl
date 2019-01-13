@@ -5,27 +5,27 @@
 NS = 1 2 3 4 5 6 12
 
 DIVICE_WIDTHS = {
-	laptop: 1800px,
-	tablet: 1200px,
-	phone: 	600px,
-	watch: 	300px,
+  laptop: 1800px,
+  tablet: 1200px,
+  phone: 	600px,
+  watch: 	300px,
 }
 
 DEVICE_HALF_PADDINGS = {
-	default: 5px,
-	laptop: 4px,
-	tablet: 3px,
-	phone: 	2px,
-	watch: 	1.5px,
+  default: 5px,
+  laptop: 4px,
+  tablet: 3px,
+  phone: 	2px,
+  watch: 	1.5px,
 }
 
 // functions ---------------------------------------------------------------------------------------
 
 selector(m, n)
-	s(n == 12 ? '.jol-%s' : '.jol-%s-%s', m, n)
+  s(n == 12 ? '.jol-%s' : '.jol-%s-%s', m, n)
 
 selector_device(device, m, n)
-	s(n == 12 ? '.jol-%s-%s' : '.jol-%s-%s-%s', unquote(device), m, n)
+  s(n == 12 ? '.jol-%s-%s' : '.jol-%s-%s-%s', unquote(device), m, n)
 
 // container ---------------------------------------------------------------------------------------
 
@@ -35,63 +35,63 @@ selector_device(device, m, n)
 .jol-gap-2x,
 .jol-gap-fixed,
 .jol-gap-fixed-2x
-	overflow: auto
+  overflow: auto
 
 // gap ---------------------------------------------------------------------------------------------
 
 /* default padding */
 padding(p)
-	+cache('padding' + p)
-		padding: p
+  +cache('padding' + p)
+    padding: p
 // margin(p)
 // 	+cache('margin' + p)
 // 		margin: p
 .jol-gap,
 .jol-gap-fixed
-	padding(DEVICE_HALF_PADDINGS[default])
-	for n in NS
-		for m in (1..n)
-			{selector(m, n)}
-					padding(DEVICE_HALF_PADDINGS[default])
+  padding(DEVICE_HALF_PADDINGS[default])
+  for n in NS
+    for m in (1..n)
+      {selector(m, n)}
+          padding(DEVICE_HALF_PADDINGS[default])
 .jol-gap-2x,
 .jol-gap-fixed-2x
-	padding(DEVICE_HALF_PADDINGS[default] * 2)
-	for n in NS
-		for m in (1..n)
-			{selector(m, n)}
-				padding(DEVICE_HALF_PADDINGS[default] * 2)
+  padding(DEVICE_HALF_PADDINGS[default] * 2)
+  for n in NS
+    for m in (1..n)
+      {selector(m, n)}
+        padding(DEVICE_HALF_PADDINGS[default] * 2)
 
 /* responsive padding */
 for device, width in DIVICE_WIDTHS
-	@media (max-width: width)
-		.jol-gap
-			padding(DEVICE_HALF_PADDINGS[device])
-			for n in NS
-				for m in (1..n)
-					{selector(m, n)}
-						padding(DEVICE_HALF_PADDINGS[device])
-		.jol-gap-2x
-			padding(DEVICE_HALF_PADDINGS[device] * 2)
-			for n in NS
-				for m in (1..n)
-					{selector(m, n)}
-						padding(DEVICE_HALF_PADDINGS[device] * 2)
+  @media (max-width: width)
+    .jol-gap
+      padding(DEVICE_HALF_PADDINGS[device])
+      for n in NS
+        for m in (1..n)
+          {selector(m, n)}
+            padding(DEVICE_HALF_PADDINGS[device])
+    .jol-gap-2x
+      padding(DEVICE_HALF_PADDINGS[device] * 2)
+      for n in NS
+        for m in (1..n)
+          {selector(m, n)}
+            padding(DEVICE_HALF_PADDINGS[device] * 2)
 
 // default columns ---------------------------------------------------------------------------------
 
 /* float left */
 for n in NS
-	for m in (1..n)
-		{selector(m, n)}
-			+cache('float')
-				float: left
-				box-sizing: border-box
+  for m in (1..n)
+    {selector(m, n)}
+      +cache('float')
+        float: left
+        box-sizing: border-box
 
 /* default width */
 for n in NS
-	for m in (1..n)
-		{selector(m, n)}
-			width: percentage(m / n)
+  for m in (1..n)
+    {selector(m, n)}
+      width: percentage(m / n)
 
 /* width with gap */
 // for device, width in DIVICE_WIDTHS
@@ -103,22 +103,22 @@ for n in NS
 
 /* default visibility */
 for device in DIVICE_WIDTHS
-	.jol-{device}-show
-		+cache('device')
-			display: none
+  .jol-{device}-show
+    +cache('device')
+      display: none
 
 // responsive --------------------------------------------------------------------------------------
 
 /* responsive width */
 for device, width in DIVICE_WIDTHS
-	@media (max-width: width)
-		.jol-{device}-show
-			display: block
-		.jol-{device}-hide
-			display: none
-		for n in NS
-			for m in (1..n)
-				{selector_device(device, m, n)}
-					width: percentage(m / n)
+  @media (max-width: width)
+    .jol-{device}-show
+      display: block
+    .jol-{device}-hide
+      display: none
+    for n in NS
+      for m in (1..n)
+        {selector_device(device, m, n)}
+          width: percentage(m / n)
 
 // end ---------------------------------------------------------------------------------------------

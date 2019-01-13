@@ -55,6 +55,8 @@ Attentions:
 
 ## Device Widths
 
+![](device-width-chart.png)
+
 ```
 desktop: default
 laptop: < 1800px
@@ -62,8 +64,6 @@ tablet: < 1200px
 phone: < 600px
 watch: < 300px
 ```
-
-![](device-width-chart.png)
 
 ## Width bases
 
